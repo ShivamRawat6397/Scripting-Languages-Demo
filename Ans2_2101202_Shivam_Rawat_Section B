@@ -1,0 +1,23 @@
+To apply a rule to multiple pages, an external style sheet is used. An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage. Multiple webpages can use the same link to access the stylesheet.
+
+The link to an external style sheet is placed within the head section of the page.
+
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+The actual style sheet file will contain CSS rules that are then applied across the entire page. For example:
+
+body {
+       background-color: ghostwhite;
+}
+h1 {
+      color: blue; font-size: 20px; font-family: verdana; font-style:italic;
+}
+In this case, the background color of the webpage will be ghostwhite and any h1 headings will appear in verdana font, as size twenty blue text in italic style.
+
+External style sheets have the following advantages over internal and inline styles:
+
+one change to the style sheet will change all linked pages
+you can create classes of styles that can then be used on many different HTML elements
+consistent look and feel across multiple web pages
+improved load times because the css file is downloaded once and applied to each relevant page as needed
